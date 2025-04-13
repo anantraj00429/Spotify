@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="images.css" /> -->
+  </head>
+  <body>
+    <div class="container bg-black">
+      <div class="left-box">
+        <div class="home bg-grey">
+          <div class="first">
+            <img class="invert" src="icon/spotify.svg" />
+            <i class="fa-solid fa-skull-crossbones cross"></i>
+          </div>
+          <ul>
+            <li><img class="invert" src="icon/home.svg" alt="home" />Home</li>
+            <li>
+              <img class="invert" src="icon/search.svg" alt="search" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library bg-grey">
+          <div class="heading">
+            <img class="invert lb-1" src="icon/playlist.svg" alt="playlist" />
+            <h3>Your Library</h3>
+            <img class="invert plus-1" src="icon/plus.svg" />
+          </div>
+          <div class="songlist">
+            <ul>
+              <li>
+                <i class="fa-solid fa-music music-1"></i>
+                <div class="info">
+                  <div>Song Name</div>
+                  <div>Song Artist</div>  
+                  <div>Library Name</div>
+                </div>
+                <div class="playNow">
+                  <span>Play Now</span>
+                  <img class="invert play-1" src="icon/play.svg" alt="play" />
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/us/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/us/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/us/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/us/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/us/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-box">
+        <div class="header">
+          <div class="nav">
+            <i class="fa-solid fa-bars bar"></i>
+            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign up</button>
+            <button class="loginbtn">Log in</button>
+          </div>
+        </div>
+        <div class="spotify-playlist">
+          <h1 class="playlist-1">Spotify Playlist</h1>
+          <div class="card">
+            <div data-folder="Newsong" class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-1" src="images/image1.jpg" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+
+            <div data-folder="latest" class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  s
+                </svg>
+              </div>
+              <img class="img-2" src="images/Badshah1.jpg" />
+              <h3>Badshah Top Hits</h3>
+              <p>Badshah Latest Song</p>
+            </div>
+
+            <div data-folder="Arjitsong" class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-3" src="images/arjitsingh.jpg" />
+              <h3>Arjit Singh Top Hits</h3>
+              <p>Arjit singh India Tour Hits Song</p>
+            </div>
+
+            <div data-folder="Jubinnautiyal" class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-4" src="images/jubin.jpg" />
+              <h3>Jubin Nautiyal song</h3>
+              <p>Jubin Nautiyal Concert song</p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-5" src="images/image5.jpg" />
+              <h3>Top Hits</h3>
+              <p></p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-6" src="images/image6.jpg" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-7" src="images/image7.jpg" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-8" src="images/image8.webp" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-9" src="images/image9.jpg" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-10" src="images/image10.jpg" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-11" src="images/image11.jpg" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-12" src="images/image12.jpg" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-13" src="images/image13.webp" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-14" src="images/image14.avif" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+
+            <div class="img">
+              <div class="play">
+                <svg
+                  width="32"
+                  height="34"
+                  viewBox=" 0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img class="img-15" src="images/image15.jpeg" />
+              <h3>Today's Top Hits</h3>
+              <p>Taylor Swift is on top of the Hottest 50!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="playbar">
+        <div class="seekbar">
+          <div class="circle"></div>
+          <div class="box"></div>
+        </div>
+        <div class="belowbar">
+          <div class="songinfo"></div>
+          <div class="songbuttons">
+            <i id="shuffle" class="fa-solid fa-shuffle shuffle"></i>
+            <i id="previous" class="fa-solid fa-backward-step backward"></i>
+            <img
+              id="play"
+              class="invert play-2"
+              src="icon/play.svg"
+              alt="play"
+            />
+            <i id="next" class="fa-solid fa-forward-step forward"></i>
+            <i id="repeat" class="fa-solid fa-repeat repeat"></i>
+            <div class="volume">
+              <img class="invert" src="icon/volume.svg" alt="volume" />
+              <div class="range">
+                <input type="range" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="songtime"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
